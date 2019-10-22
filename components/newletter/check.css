@@ -1,0 +1,45 @@
+.check {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 20px;
+    
+    /* width: 100%; */
+}
+.check .pink{
+    flex-grow: 1;
+    margin: 20px 0px;
+    overflow-y: scroll;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100vh;
+}
+
+.check .templates > *{
+    height: 100%;
+    border: 1px solid black;
+}
+
+.check .userdata > *, .check button {
+    width: 90%;
+    margin-bottom: 1px;
+    height: 30px;
+}
+
+.check .userdata {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.check input {
+    border: none;
+    border-bottom: 2px solid black;
+}
+.check > button {
+    border: none;
+    background-color: greenyellow;
+    margin-bottom: 1px;
+    height: 30px;
+    font-family: 'BinggraeMelona'; 
+    font-weight: bold;
+}

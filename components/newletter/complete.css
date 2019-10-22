@@ -1,0 +1,15 @@
+.complete {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    flex-grow: 1;
+    width: 70vw;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+.complete img {
+    width: 70vw;
+    height: 70vw;
+}

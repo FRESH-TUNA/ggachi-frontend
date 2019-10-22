@@ -1,0 +1,36 @@
+.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content > * {
+    width: 100%;
+}
+.content h2 { text-align: center;}
+
+.content textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.content input {
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.content button {
+    border: none;
+    background-color: greenyellow;
+    margin-bottom: 1px;
+    height: 30px;
+    font-family: 'BinggraeMelona'; 
+    font-weight: bold;
+}

@@ -1,0 +1,78 @@
+.pink { 
+    padding: 20px 20px 0px 20px; 
+    height: 100%;
+} 
+
+.pink > * {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-flow: column;
+    align-items: center;
+    border: 2px solid rgb(186, 164, 127);
+    height: calc(100% - 44px);
+}
+
+.pink p { text-align: center;}
+
+.pink .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    width: 100%;
+}
+.pink .buttons > div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.pink .buttons button {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 25vw;
+    background-color: rgb(186, 164, 127);
+}
+
+.pink .ad {
+    width: 100%;
+    height: 60px;
+
+    background-image: url('/static/img/banner.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.pink .bride-broom > div {
+    text-align: center;
+}
+.pink .bride-broom img, .pink .map img{ 
+    width: 70vw;
+    height: 70vw;
+}
+
+.pink .invitation, .pink .map { 
+    justify-content: center;
+    padding: 20px;
+    height: calc(100% - 84px);
+}
+.pink .invitation h2 { margin-top: 40px; }
+.pink .invitation img{ 
+    width: 60vw;
+    height: 60vw;
+}
+
+.pink .map {
+    justify-content: space-evenly;
+}
+.pink .map .howto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.pink .map .howto div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 50%;
+}

@@ -1,0 +1,32 @@
+.letter > * {
+    display: flex;
+    justify-content: center;
+}
+
+.letter .bride-broom {
+    padding: 20px 0px;
+    flex-flow: column;
+    align-items: center;
+}
+
+.letter p { text-align: center;}
+
+.letter .buttons {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.letter .buttons * {
+    height: 20px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.letter button { margin-bottom: 2px; }
+.letter .ad {
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}

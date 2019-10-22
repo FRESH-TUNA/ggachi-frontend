@@ -1,0 +1,36 @@
+.template {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.template .templates{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 10px;
+    flex-grow: 1;
+    margin: 10px 0px;
+    overflow-y: scroll;
+    width: 100%;
+    height: 50vh;
+}
+
+.template .templates > *{
+    height: 30vh;
+    background-image: url('/static/img/flower.jpg');
+    background-position: center;
+}
+
+.template button {
+    width: 100%;
+    border: none;
+    background-color: greenyellow;
+    margin-bottom: 1px;
+    height: 30px;
+    font-family: 'BinggraeMelona'; 
+    font-weight: bold;
+}
