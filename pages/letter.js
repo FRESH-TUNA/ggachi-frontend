@@ -10,7 +10,7 @@ function Letter(props) {
   const fetchData = async() => {
     axios({
         method: 'get',
-        url: 'http://127.0.0.1:8000/api/letters/' + props.query.pk,
+        url: 'letters/' + props.query.pk,
     }).then((response) => {
         setLetterData(response.data)
     })

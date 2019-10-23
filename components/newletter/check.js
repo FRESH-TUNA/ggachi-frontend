@@ -14,7 +14,7 @@ function Check(props) {
     const createLetter = () => {
         axios({
             method: 'post',
-            url: 'http://127.0.0.1:8000/api/letters',
+            url: 'letters',
             data: {...props, email, password1, password2},
         }).then((response) => {
             props.setNewLetterPk(response.data.id)
@@ -41,13 +41,13 @@ function Check(props) {
                     onChange={(event) => setEmail(event.target.value)}
                 />
                 <input 
-                    type="text" 
+                    type="password" 
                     placeholder="비밀번호"
                     value={password1}
                     onChange={(event) => setPassword1(event.target.value)}
                 />
                 <input 
-                    type="text" 
+                    type="password" 
                     placeholder="비밀번호 재입력"
                     value={password2}
                     onChange={(event) => setPassword2(event.target.value)}

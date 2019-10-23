@@ -26,9 +26,9 @@ app.prepare()
         return handle(req, res)
     });
 
-    server.listen(9090, (err) => {
+    server.listen(80, (err) => {
         if(err) throw err;
-        console.log("> Ready on Server Port: 9090")
+        console.log("> Ready on Server Port: 80")
     })
 })
 .catch((ex) => {
