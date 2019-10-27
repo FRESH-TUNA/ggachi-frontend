@@ -22,7 +22,7 @@
 
 .template .templates > *{
     height: 30vh;
-    background-image: url('/static/img/flower.jpg');
+    background-image: url('/static/img/flower.png');
     background-position: center;
 }
 

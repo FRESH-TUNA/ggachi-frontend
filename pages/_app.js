@@ -7,7 +7,7 @@ import axios from 'axios'
 import {store}  from '../states/store'
 import './_app.css'
 
-// axios.defaults.baseURL = 'http://34.84.70.64/api';
+axios.defaults.baseURL = 'http://34.84.70.64/api';
 axios.defaults.baseURL = 'http://127.0.0.1:8000/api';
 
 export default withRedux(store)(class MyApp extends App {
