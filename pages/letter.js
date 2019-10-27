@@ -9,17 +9,20 @@ function Letter(props) {
   const [letterData, setLetterData] = useState('');
   const fetchData = async() => {
     axios({
-        method: 'get',
-        url: 'letters/' + props.query.pk,
+      method: 'get',
+      url: 'letters/' + props.query.pk,
     }).then((response) => {
-        setLetterData(response.data)
+      const [year, month, day] = response.data.date.split("-")
+      setLetterData({
+        ...response.data,
+        year, month, day
+      })
     })
   }
 
   useEffect(() => {
     fetchData()
   }, []);
-    
 
   return (
     <div className="letter">

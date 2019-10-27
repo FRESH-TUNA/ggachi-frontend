@@ -12,6 +12,7 @@
 }
 .home > img {
     width: 20vw;
+    max-width: 100px;
 }
 
 .home header { 
@@ -23,21 +24,22 @@
 
 .home .home-menu{
     display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-template-rows: 50vw 50vw;
+    grid-template-columns: minmax(40%, 150px) minmax(40%, 150px);
+    grid-template-rows: minmax(50%, 150px) minmax(50%, 150px);
     grid-gap: 10px 10px;
 }
 .home .home-menu > * {font-family: 'BinggraeMelona'; }
 
 .home .home-menu > * > img {
-    width: 20vw;
-    height: 20vw;
+    width: 20%;
+    max-width: 70px;
 }
 
 .home .home-menu .newLetter{
     grid-column: 1/3;
     grid-row: 1/2;
     background: #4ab8bc;
+
 }
 
 .home .home-menu .myGiftToOther{

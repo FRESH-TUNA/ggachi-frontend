@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import axios from 'axios'
 import * as Auth from '../../states/authStore/authAction';
 import './header.css'
+import Router from 'next/router'
 
 class Header extends React.Component {
     constructor(props) {
@@ -57,10 +58,7 @@ class Header extends React.Component {
             <div className="main-header">
                 <button 
                     className="auth" 
-                    onClick={(event) => {
-                        document.getElementsByClassName('menu')[0].style.display = 'initial';
-                        event.stopPropagation()
-                    }}
+                    onClick={(event) => {Router.push('/')}}
                 />
                 
                 {

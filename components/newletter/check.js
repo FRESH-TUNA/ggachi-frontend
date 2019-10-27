@@ -12,10 +12,11 @@ function Check(props) {
     const [password2, setPassword2] = useState('');
 
     const createLetter = () => {
+        const date = props.year + "-" + props.month + "-" + props.day;
         axios({
             method: 'post',
             url: 'letters',
-            data: {...props, email, password1, password2},
+            data: {...props, email, date, password1, password2},
         }).then((response) => {
             props.setNewLetterPk(response.data.id)
             console.log(props.newLetterPk)

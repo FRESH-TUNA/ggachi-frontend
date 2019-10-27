@@ -5,6 +5,7 @@
 
     flex-grow: 1;
     width: 100%;
+    max-width: 500px;
     margin-bottom: 20px;
 }
 
@@ -17,6 +18,12 @@
     border: 2px solid black;
     border-radius: 10px;
     flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.content .date {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 

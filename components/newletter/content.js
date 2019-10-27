@@ -54,6 +54,79 @@ class Content extends React.Component {
                     value={this.props.subway}
                     onChange={(event) => this.props.setHowtosubway(event.target.value)}
                 />
+
+                
+                <div className="date">
+                <label for="jb-input-text">날짜</label>
+                <div className="year">
+                    <select name="yearlist" form="carform" onChange={(event) => this.props.setYear(event.target.value)}>
+                        {(function (rows, i, len) {
+                            while (i <= len) {
+                                rows.push(<option value={i}>{i}</option>)
+                                i++
+                            }
+                            return rows;
+                        })([], 2019, 2030)}
+                    </select>
+                    <label for="jb-input-text">년</label>
+                </div>
+                <div className="month">
+                    <select name="monthlist" form="carform" onChange={(event) => this.props.setMonth(event.target.value)}>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label for="jb-input-text">월</label>
+                </div>
+                
+                <div className="day">
+                <select name="daylist" form="carform" onChange={(event) => this.props.setDay(event.target.value)}>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <label for="jb-input-text">일</label>
+                </div>
+                </div>
+                
+                
                 <label for="jb-input-text">메세지</label>
                 <textarea 
                     onChange={(event) => this.props.setMessage(event.target.value)}

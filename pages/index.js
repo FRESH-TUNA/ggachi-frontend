@@ -12,7 +12,6 @@ function Index(props) {
   
   return (
     <div className="home" onClick={() => document.getElementsByClassName('menu')[0].style.display = 'none'}>
-      <Header />
       <img src="/static/img/bird_logo.svg"/>
       <h1>피카</h1>
       <p>맟춤형 청첩장 플랫폼</p>

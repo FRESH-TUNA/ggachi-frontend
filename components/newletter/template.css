@@ -5,6 +5,7 @@
 
     flex-grow: 1;
     width: 100%;
+    max-width: 500px;
     margin-bottom: 20px;
 }
 

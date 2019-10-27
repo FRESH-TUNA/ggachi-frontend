@@ -17,11 +17,11 @@ function Pink(props)  {
         <div className="pink">
             <section className="bride-broom">
                 <div>
-                    <h2>{props.bride}</h2>
+                    <h1>{props.month}.{props.day}</h1>
                     <h4>{props.start_time}</h4>
                     <h4>{props.place_name}</h4>
                 </div>
-                <img src="/static/img/flower.jpg"/>
+                <img src="/static/img/flower.png"/>
                 <div>
                     <h4>groom & bride</h4>
                     <h2>{props.groom}</h2>

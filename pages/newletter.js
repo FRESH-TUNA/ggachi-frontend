@@ -28,6 +28,10 @@ function WriteLetter(props) {
   const [template, setTemplate] = useState(1);
   const [newLetterPk, setNewLetterPk] = useState('');
 
+  const [year, setYear] = useState('2019');
+  const [month, setMonth] = useState('01');
+  const [day, setDay] = useState('01');
+
   const getComponent = () => {
     switch (props.query.componentState) {
       case 'content':
@@ -40,15 +44,21 @@ function WriteLetter(props) {
           message={message} setMessage={setMessage}
           howtobus={howtobus} setHowtobus={setHowtobus}
           howtosubway={howtosubway} setHowtosubway={setHowtosubway}
+          year={year} setYear={setYear}
+          month={month} setMonth={setMonth}
+          day={day} setDay={setDay}
         />
       case 'template':
         return <Template
           template={template} setTemplate={setTemplate}
         />
       case 'check':
-          let finalData = {bride, groom, place_address,
+          const finalData = {
+            bride, groom, place_address,
             place_name, start_time, message,
-            howtobus, howtosubway, template}
+            howtobus, howtosubway, template, 
+            year, month, day
+          }
         return <Check 
           {...finalData} 
           setNewLetterPk={setNewLetterPk}
@@ -73,13 +83,3 @@ WriteLetter.getInitialProps = ({ query }) => {
 }
 
 export default WriteLetter;
-
-// const mapStateToProps = (state) => ({
-
-// })
-
-// const mapDispatchToProps = (dispatch) => ({
-//     Auth: bindActionCreators(Auth, dispatch),
-//     NewLetterAction: bindActionCreators(NewLetterAction, dispatch)
-// })
-// export default connect(mapStateToProps, mapDispatchToProps)(WriteLetter)
